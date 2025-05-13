@@ -1,0 +1,527 @@
+apiVersion: flows.netobserv.io/v1beta2
+kind: FlowCollector
+metadata:
+  annotations:
+    flows.netobserv.io/flowcollectorlegacy-namespace: netobserv
+    flows.netobserv.io/flpparent-namespace: netobserv
+  creationTimestamp: '2025-05-13T13:18:07Z'
+  generation: 6
+  managedFields:
+    - apiVersion: flows.netobserv.io/v1beta2
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:metadata':
+          'f:annotations':
+            .: {}
+            'f:flows.netobserv.io/flowcollectorlegacy-namespace': {}
+            'f:flows.netobserv.io/flpparent-namespace': {}
+        'f:spec':
+          'f:agent':
+            'f:ebpf':
+              'f:metrics':
+                'f:server':
+                  'f:tls':
+                    .: {}
+                    'f:insecureSkipVerify': {}
+                    'f:type': {}
+            'f:ipfix':
+              .: {}
+              'f:cacheActiveTimeout': {}
+              'f:cacheMaxFlows': {}
+              'f:clusterNetworkOperator':
+                .: {}
+                'f:namespace': {}
+              'f:forceSampleAll': {}
+              'f:ovnKubernetes':
+                .: {}
+                'f:containerName': {}
+                'f:daemonSetName': {}
+                'f:namespace': {}
+              'f:sampling': {}
+          'f:kafka':
+            'f:sasl':
+              .: {}
+              'f:clientIDReference':
+                .: {}
+                'f:namespace': {}
+              'f:clientSecretReference':
+                .: {}
+                'f:namespace': {}
+              'f:type': {}
+          'f:loki':
+            'f:manual':
+              .: {}
+              'f:authToken': {}
+              'f:ingesterUrl': {}
+              'f:querierUrl': {}
+              'f:statusTls':
+                .: {}
+                'f:caCert':
+                  .: {}
+                  'f:namespace': {}
+                'f:enable': {}
+                'f:insecureSkipVerify': {}
+                'f:userCert':
+                  .: {}
+                  'f:namespace': {}
+              'f:tenantID': {}
+              'f:tls':
+                .: {}
+                'f:caCert':
+                  .: {}
+                  'f:namespace': {}
+                'f:enable': {}
+                'f:insecureSkipVerify': {}
+                'f:userCert':
+                  .: {}
+                  'f:namespace': {}
+            'f:microservices':
+              .: {}
+              'f:ingesterUrl': {}
+              'f:querierUrl': {}
+              'f:tls':
+                .: {}
+                'f:caCert':
+                  .: {}
+                  'f:namespace': {}
+                'f:enable': {}
+                'f:insecureSkipVerify': {}
+                'f:userCert':
+                  .: {}
+                  'f:namespace': {}
+            'f:monolithic':
+              'f:tls':
+                'f:userCert':
+                  .: {}
+                  'f:namespace': {}
+          'f:processor':
+            'f:kafkaConsumerAutoscaler':
+              .: {}
+              'f:maxReplicas': {}
+              'f:status': {}
+            'f:metrics':
+              'f:server':
+                'f:tls':
+                  .: {}
+                  'f:insecureSkipVerify': {}
+                  'f:type': {}
+            'f:subnetLabels': {}
+          'f:prometheus':
+            'f:querier':
+              'f:manual':
+                .: {}
+                'f:forwardUserToken': {}
+                'f:tls':
+                  .: {}
+                  'f:caCert':
+                    .: {}
+                    'f:namespace': {}
+                  'f:enable': {}
+                  'f:insecureSkipVerify': {}
+                  'f:userCert':
+                    .: {}
+                    'f:namespace': {}
+                'f:url': {}
+      manager: manager
+      operation: Update
+      time: '2025-05-13T13:23:56Z'
+    - apiVersion: flows.netobserv.io/v1beta2
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:spec':
+          'f:namespace': {}
+          'f:networkPolicy':
+            .: {}
+            'f:additionalNamespaces': {}
+            'f:enable': {}
+          .: {}
+          'f:deploymentModel': {}
+          'f:agent':
+            .: {}
+            'f:ebpf':
+              'f:excludeInterfaces': {}
+              'f:kafkaBatchSize': {}
+              'f:cacheActiveTimeout': {}
+              .: {}
+              'f:interfaces': {}
+              'f:metrics':
+                .: {}
+                'f:server':
+                  .: {}
+                  'f:port': {}
+              'f:cacheMaxFlows': {}
+              'f:resources':
+                .: {}
+                'f:limits':
+                  .: {}
+                  'f:memory': {}
+                'f:requests':
+                  .: {}
+                  'f:cpu': {}
+                  'f:memory': {}
+              'f:logLevel': {}
+              'f:sampling': {}
+              'f:imagePullPolicy': {}
+            'f:type': {}
+          'f:kafka':
+            .: {}
+            'f:address': {}
+            'f:tls':
+              .: {}
+              'f:caCert':
+                .: {}
+                'f:certFile': {}
+                'f:name': {}
+                'f:namespace': {}
+                'f:type': {}
+              'f:enable': {}
+              'f:insecureSkipVerify': {}
+              'f:userCert':
+                .: {}
+                'f:certFile': {}
+                'f:certKey': {}
+                'f:name': {}
+                'f:namespace': {}
+                'f:type': {}
+            'f:topic': {}
+          'f:loki':
+            'f:monolithic':
+              .: {}
+              'f:tenantID': {}
+              'f:tls':
+                .: {}
+                'f:caCert':
+                  .: {}
+                  'f:certFile': {}
+                  'f:name': {}
+                  'f:namespace': {}
+                  'f:type': {}
+                'f:enable': {}
+                'f:insecureSkipVerify': {}
+              'f:url': {}
+            'f:writeBatchWait': {}
+            .: {}
+            'f:microservices':
+              'f:tenantID': {}
+            'f:writeBatchSize': {}
+            'f:lokiStack':
+              .: {}
+              'f:name': {}
+            'f:writeTimeout': {}
+            'f:mode': {}
+            'f:readTimeout': {}
+            'f:enable': {}
+          'f:consolePlugin':
+            'f:quickFilters': {}
+            'f:autoscaler':
+              .: {}
+              'f:maxReplicas': {}
+              'f:metrics': {}
+              'f:minReplicas': {}
+              'f:status': {}
+            .: {}
+            'f:replicas': {}
+            'f:resources':
+              .: {}
+              'f:limits':
+                .: {}
+                'f:memory': {}
+              'f:requests':
+                .: {}
+                'f:cpu': {}
+                'f:memory': {}
+            'f:logLevel': {}
+            'f:enable': {}
+            'f:portNaming':
+              .: {}
+              'f:enable': {}
+              'f:portNames':
+                .: {}
+                'f:3100': {}
+            'f:imagePullPolicy': {}
+          'f:prometheus':
+            .: {}
+            'f:querier':
+              .: {}
+              'f:enable': {}
+              'f:mode': {}
+              'f:timeout': {}
+          'f:processor':
+            'f:kafkaConsumerReplicas': {}
+            'f:kafkaConsumerQueueCapacity': {}
+            'f:logTypes': {}
+            .: {}
+            'f:metrics':
+              .: {}
+              'f:disableAlerts': {}
+              'f:server':
+                .: {}
+                'f:port': {}
+            'f:resources':
+              .: {}
+              'f:limits':
+                .: {}
+                'f:memory': {}
+              'f:requests':
+                .: {}
+                'f:cpu': {}
+                'f:memory': {}
+            'f:clusterName': {}
+            'f:kafkaConsumerBatchSize': {}
+            'f:logLevel': {}
+            'f:multiClusterDeployment': {}
+            'f:imagePullPolicy': {}
+          'f:exporters': {}
+      manager: Mozilla
+      operation: Update
+      time: '2025-05-13T13:40:08Z'
+    - apiVersion: flows.netobserv.io/v1beta2
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:status':
+          .: {}
+          'f:conditions': {}
+      manager: manager
+      operation: Update
+      subresource: status
+      time: '2025-05-13T13:46:01Z'
+  name: cluster
+  resourceVersion: '103395638'
+  uid: da452cf4-018d-406f-9af4-2d369bad3acf
+spec:
+  networkPolicy:
+    additionalNamespaces: []
+    enable: false
+  loki:
+    writeTimeout: 10s
+    microservices:
+      ingesterUrl: 'http://loki-distributor:3100/'
+      querierUrl: 'http://loki-query-frontend:3100/'
+      tenantID: netobserv
+      tls:
+        caCert:
+          namespace: ''
+        enable: false
+        insecureSkipVerify: false
+        userCert:
+          namespace: ''
+    enable: true
+    mode: LokiStack
+    manual:
+      authToken: Disabled
+      ingesterUrl: 'http://loki:3100/'
+      querierUrl: 'http://loki:3100/'
+      statusTls:
+        caCert:
+          namespace: ''
+        enable: false
+        insecureSkipVerify: false
+        userCert:
+          namespace: ''
+      tenantID: netobserv
+      tls:
+        caCert:
+          namespace: ''
+        enable: false
+        insecureSkipVerify: false
+        userCert:
+          namespace: ''
+    lokiStack:
+      name: loki
+    readTimeout: 30s
+    monolithic:
+      tenantID: netobserv
+      tls:
+        caCert:
+          certFile: service-ca.crt
+          name: loki-gateway-ca-bundle
+          namespace: ''
+          type: configmap
+        enable: false
+        insecureSkipVerify: false
+        userCert:
+          namespace: ''
+      url: 'http://loki.netobserv.svc:3100/'
+    writeBatchWait: 1s
+    writeBatchSize: 10485760
+  deploymentModel: Direct
+  agent:
+    ebpf:
+      logLevel: info
+      metrics:
+        server:
+          port: 9400
+          tls:
+            insecureSkipVerify: false
+            type: Disabled
+      cacheMaxFlows: 100000
+      resources:
+        limits:
+          memory: 800Mi
+        requests:
+          cpu: 100m
+          memory: 50Mi
+      sampling: 50
+      imagePullPolicy: IfNotPresent
+      excludeInterfaces:
+        - lo
+      kafkaBatchSize: 1048576
+      cacheActiveTimeout: 5s
+      interfaces: []
+    ipfix:
+      cacheActiveTimeout: 20s
+      cacheMaxFlows: 400
+      clusterNetworkOperator:
+        namespace: openshift-network-operator
+      forceSampleAll: false
+      ovnKubernetes:
+        containerName: ovnkube-node
+        daemonSetName: ovnkube-node
+        namespace: ovn-kubernetes
+      sampling: 400
+    type: eBPF
+  kafka:
+    address: kafka-cluster-kafka-bootstrap.netobserv
+    sasl:
+      clientIDReference:
+        namespace: ''
+      clientSecretReference:
+        namespace: ''
+      type: Disabled
+    tls:
+      caCert:
+        certFile: ca.crt
+        name: kafka-cluster-cluster-ca-cert
+        namespace: ''
+        type: secret
+      enable: false
+      insecureSkipVerify: false
+      userCert:
+        certFile: user.crt
+        certKey: user.key
+        name: flp-kafka
+        namespace: ''
+        type: secret
+    topic: network-flows
+  prometheus:
+    querier:
+      enable: true
+      manual:
+        forwardUserToken: false
+        tls:
+          caCert:
+            namespace: ''
+          enable: false
+          insecureSkipVerify: false
+          userCert:
+            namespace: ''
+        url: 'http://prometheus:9090'
+      mode: Auto
+      timeout: 30s
+  consolePlugin:
+    autoscaler:
+      maxReplicas: 3
+      metrics:
+        - resource:
+            name: cpu
+            target:
+              averageUtilization: 50
+              type: Utilization
+          type: Resource
+      minReplicas: 1
+      status: Disabled
+    enable: true
+    imagePullPolicy: IfNotPresent
+    logLevel: info
+    portNaming:
+      enable: true
+      portNames:
+        '3100': loki
+    quickFilters:
+      - default: true
+        filter:
+          flow_layer: '"app"'
+        name: Applications
+      - filter:
+          flow_layer: '"infra"'
+        name: Infrastructure
+      - default: true
+        filter:
+          dst_kind: '"Pod"'
+          src_kind: '"Pod"'
+        name: Pods network
+      - filter:
+          dst_kind: '"Service"'
+        name: Services network
+    replicas: 1
+    resources:
+      limits:
+        memory: 100Mi
+      requests:
+        cpu: 100m
+        memory: 50Mi
+  processor:
+    logLevel: info
+    metrics:
+      disableAlerts: []
+      server:
+        port: 9401
+        tls:
+          insecureSkipVerify: false
+          type: Disabled
+    resources:
+      limits:
+        memory: 800Mi
+      requests:
+        cpu: 100m
+        memory: 100Mi
+    clusterName: ''
+    multiClusterDeployment: false
+    kafkaConsumerQueueCapacity: 1000
+    imagePullPolicy: IfNotPresent
+    kafkaConsumerAutoscaler:
+      maxReplicas: 0
+      status: Disabled
+    logTypes: Flows
+    kafkaConsumerReplicas: 3
+    subnetLabels: {}
+    kafkaConsumerBatchSize: 10485760
+  exporters: []
+  namespace: netobserv
+status:
+  conditions:
+    - lastTransitionTime: '2025-05-13T13:38:50Z'
+      message: '2 ready components, 3 with failure, 0 pending'
+      reason: Failure
+      status: 'False'
+      type: Ready
+    - lastTransitionTime: '2025-05-13T13:40:12Z'
+      message: configmaps "loki-gateway-ca-bundle" not found
+      reason: ReconcileConsolePluginFailed
+      status: 'False'
+      type: FlowCollectorLegacyReady
+    - lastTransitionTime: '2025-05-13T13:40:12Z'
+      message: ''
+      reason: Ready
+      status: 'True'
+      type: MonitoringReady
+    - lastTransitionTime: '2025-05-13T13:18:07Z'
+      message: ''
+      reason: Ready
+      status: 'True'
+      type: NetworkPolicyReady
+    - lastTransitionTime: '2025-05-13T13:40:08Z'
+      message: configmaps "loki-gateway-ca-bundle" not found
+      reason: FLPError
+      status: 'False'
+      type: FLPParentReady
+    - lastTransitionTime: '2025-05-13T13:18:07Z'
+      message: Transformer only used with Kafka
+      reason: ComponentUnused
+      status: Unknown
+      type: FLPTransformOnlyReady
+    - lastTransitionTime: '2025-05-13T13:38:50Z'
+      message: configmaps "loki-gateway-ca-bundle" not found
+      reason: FLPReconcileError
+      status: 'False'
+      type: FLPMonolithReady
